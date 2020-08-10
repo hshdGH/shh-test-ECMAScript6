@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECMAScript6 测试</title>
+    <script type="text/javascript">
+        // for (let i = 0; i < 10; i++){
+        //     console.log(i);
+        // }
+        // console.log("let循环体外： " + i);
+
+        // let name = "let_es6";
+        // console.log("name: " + name);
+
+        // const name2 = "const_es6";
+        // console.log(`name2 ${name2}`)
+
+        // const template = `<div><h2>const template</h2></div>`;
+        // document.write(template);
+
+        // function person2(name, age) {
+        //     return {name, age};
+        // }
+        // console.log("es6_person2 -> " + JSON.stringify(person2("es6_2", 21)));
+
+        // var print = function (obj) {
+        //     console.log(obj);
+        // }
+        // print("obj.val")
+        // var print2 = obj => console.log(obj);
+        // print2("obj2.val");
+
+        // let person = {
+        //     "name":"es6",
+        //     learn1:function (obj) {
+        //         console.log(this.name + " 在学习 " + obj);
+        //     },
+        //     learn2:(obj2) => console.log(person.name + " 在学习 " + obj2),
+        //     learn3(obj3){
+        //         console.log(this.name + " 在学习 " + obj3)
+        //     }
+        // };
+        // person.learn1("java");
+        // person.learn2("js");
+        // person.learn3("es6");
+
+        const promise = new Promise(function (resolve, reject) {
+            setTimeout(() => {
+                let num = Math.random();
+                if (num < 0.5){
+                    resolve("成功, num = " + num);
+                }else{
+                    resolve("成功, num = " + num);
+                }
+            }, 300);
+        });
+        promise.then(function (msg) {
+            console.log(msg);
+        }).catch(function (msg) {
+            console.log(msg);
+        });
+    </script>
+</head>
+<body>
+    <h1>ES6就是ECMAScript第6版标准。</h1>
+</body>
+</html>
